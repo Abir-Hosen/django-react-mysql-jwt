@@ -17,7 +17,10 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, include
+from core.user.viewsets import  datafile_viewsets
 
 urlpatterns = [
     path('api/', include(('core.routers', 'core'), namespace='core-api')),
+
+    path('api/datafile/', datafile_viewsets, name='datafile_viewsets'),
 ]

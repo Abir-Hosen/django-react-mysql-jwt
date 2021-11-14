@@ -4,6 +4,7 @@ import * as types from './types';
 
 const basicDataState = {
     userList: [],
+    fileData: [],
 }
 
 export const basicData = (state = basicDataState, action) => {
@@ -21,9 +22,19 @@ export const basicData = (state = basicDataState, action) => {
             case types.FETCH_USERS_FAILED:
                 draft.userList = []
                 console.log('fetch user failed', meta)
-
                 break;
 
+            case types.FETCH_FILE_DATA:
+                console.log('fetch filedata')
+                break;
+            case types.FETCH_FILE_DATA_SUCCESS:
+                draft.fileData = payload
+                console.log('fetch filedata success', payload)
+                break;
+            case types.FETCH_FILE_DATA_FAILED:
+                draft.fileData = []
+                console.log('fetch filedata failed', meta)
+                break;
 
             default:
                 return state;

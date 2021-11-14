@@ -1,5 +1,6 @@
 export {
     fetchusers,
+    fetchfileData,
     uploadFile,
     
 } from './action'

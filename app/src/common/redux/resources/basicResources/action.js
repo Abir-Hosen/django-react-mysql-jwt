@@ -16,7 +16,7 @@ export const fetchusers = () => ({
 export const fetchfileData = () => ({
     type: types.FETCH_FILE_DATA,
     payload: {
-        path: `/`,
+        path: `/datafile/`,
         method: 'GET',
     },
     meta: {
@@ -26,18 +26,18 @@ export const fetchfileData = () => ({
     },
 });
 
-export const fetchfile = () => ({
-    type: types.FETCH_FILE_DATA,
-    payload: {
-        path: `/`,
-        method: 'GET',
-    },
-    meta: {
-        api: true,
-        successMessage: 'File fetch successfully',
-        errorMessage: 'File fetch failed',
-    },
-});
+// export const fetchfile = () => ({
+//     type: types.FETCH_FILE_DATA,
+//     payload: {
+//         path: `/`,
+//         method: 'GET',
+//     },
+//     meta: {
+//         api: true,
+//         successMessage: 'File fetch successfully',
+//         errorMessage: 'File fetch failed',
+//     },
+// });
 
 export const uploadFile = (file) => ({
     type: types.UPLOAD_FILE,
