@@ -1,0 +1,188 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*
+=======================================================================
+Loader area
+=======================================================================
+*/
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+/*
+=======================================================================
+Deploy Managed Application
+=======================================================================
+*/
+
+.left-header {
+  text-align: left;
+  font-size: large;
+}
+
+.left-header.blue {
+  color: rgb(99, 99, 212);
+  font-size: medium;
+}
+
+.input-label01 {
+  text-align: left;
+  font-size: 10px;
+  padding-top: 0;
+  color: rgb(107, 107, 107);
+}
+
+.input-label02 {
+  text-align: left;
+  font-size: 10px;
+  padding-top: 0;
+  color: rgb(107, 107, 107);
+}
+
+.countryList {
+  display: block;
+  min-width: 200;
+}
+
+#demo-controlled-open-select {
+  text-align: left;
+}
+
+.server-border {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(226, 226, 226);
+  background-color: rgb(240, 240, 240);
+  cursor: pointer;
+  transform: scale(1);
+  /* you need a scale here to allow it to transition in both directions */
+  transition: 0.50s all ease;
+}
+
+.server-border.active {
+  border-top-width: 4px;
+  border-top-color: rgb(85, 109, 161);
+  background-color: rgb(255, 255, 255);
+  margin-top: -10px;
+  transform: scale(1);
+  /* you need a scale here to allow it to transition in both directions */
+  transition: 0.50s all ease;
+}
+
+.server-img {
+  height: 120px;
+  width: 150px;
+  object-fit: contain;
+  width: 60%;
+  display: inline-block;
+}
+
+.fa-info-circle {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.inp01 {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  text-align: left;
+  padding-left: 0;
+}
+optgroup {
+  font-size: 13px;
+}
+.not-active {
+  pointer-events: none;
+  cursor: default;
+}
+
+/* Servers List */
+.server-list-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #eaeff0;
+  /* margin: 20px 10px 0 0; */
+}
+.server-list-title {
+  font-size: 15px;
+  margin-bottom: -15px;
+}
+.media {
+  margin-right: 10px;
+}
+.pointer {
+  cursor: pointer;
+}
+.fa-power-off {
+  color: #25a399;
+}
+.fa-play {
+  color: #2caf48;
+}
+.fa-stop {
+  color: #af2c2c;
+}
+.fa-trash-alt {
+  color: #2c65af;
+}
+.start-status{
+  color: #af2c2c;
+  font-weight: bold;
+  padding: 5px;
+  border: 1px solid #af2c2c;
+}
+.stop-status{
+  color: #2caf48;
+  font-weight: bold;
+  padding: 5px;
+  border: 1px solid #2caf48;
+}
+#serverSize .MuiSlider-markLabel{
+  font-size: 10px;
+}
+
+.pass-width {
+  width: 160px;
+  display: inline-block;
+}
